@@ -1403,36 +1403,63 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="有向图游戏" class="md-nav__link">
-    有向图游戏
+  <a href="#_1" title="公平组合游戏" class="md-nav__link">
+    公平组合游戏
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#nim" title="Nim 博弈" class="md-nav__link">
-    Nim 博弈
+  <a href="#nim" title="Nim 游戏" class="md-nav__link">
+    Nim 游戏
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#icg" title="公平组合游戏 ICG" class="md-nav__link">
-    公平组合游戏 ICG
+  <a href="#_2" title="博弈图和状态" class="md-nav__link">
+    博弈图和状态
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mex-sg" title="mex 运算与 SG 函数" class="md-nav__link">
-    mex 运算与 SG 函数
+  <a href="#nim_1" title="Nim 和" class="md-nav__link">
+    Nim 和
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="证明" class="md-nav__link">
+    证明
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sg" title="有向图游戏与 SG 函数" class="md-nav__link">
+    有向图游戏与 SG 函数
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" title="参考" class="md-nav__link">
-    参考
+  <a href="#nim_2" title="将 Nim 游戏转换为有向图游戏" class="md-nav__link">
+    将 Nim 游戏转换为有向图游戏
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="参考文献" class="md-nav__link">
+    参考文献
   </a>
   
 </li>
@@ -3014,36 +3041,63 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#_1" title="有向图游戏" class="md-nav__link">
-    有向图游戏
+  <a href="#_1" title="公平组合游戏" class="md-nav__link">
+    公平组合游戏
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#nim" title="Nim 博弈" class="md-nav__link">
-    Nim 博弈
+  <a href="#nim" title="Nim 游戏" class="md-nav__link">
+    Nim 游戏
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#icg" title="公平组合游戏 ICG" class="md-nav__link">
-    公平组合游戏 ICG
+  <a href="#_2" title="博弈图和状态" class="md-nav__link">
+    博弈图和状态
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#mex-sg" title="mex 运算与 SG 函数" class="md-nav__link">
-    mex 运算与 SG 函数
+  <a href="#nim_1" title="Nim 和" class="md-nav__link">
+    Nim 和
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" title="证明" class="md-nav__link">
+    证明
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sg" title="有向图游戏与 SG 函数" class="md-nav__link">
+    有向图游戏与 SG 函数
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#_2" title="参考" class="md-nav__link">
-    参考
+  <a href="#nim_2" title="将 Nim 游戏转换为有向图游戏" class="md-nav__link">
+    将 Nim 游戏转换为有向图游戏
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" title="参考文献" class="md-nav__link">
+    参考文献
   </a>
   
 </li>
@@ -3076,35 +3130,79 @@
                   <h1>博弈论</h1>
                 
                  <blockquote class="page-time"></blockquote>
-                <h2 id="_1">有向图游戏<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<p>在一个 DAG 中，只有一个起点，上面有一个棋子，
-两个玩家轮流沿着有向边推动棋子，不能走的玩家判负。</p>
-<h2 id="nim">Nim 博弈<a class="headerlink" href="#nim" title="Permanent link">&para;</a></h2>
-<p><span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> 堆物品，每堆有 <span><span class="MathJax_Preview">a_i</span><script type="math/tex">a_i</script></span> 个，两个玩家轮流任选一堆来取物品，
-但不能不取，取走最后一个物品者获胜（不能取的玩家判负）
-不难发现 Nim 博弈是由 <span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> 个有向图游戏组成的</p>
-<blockquote>
-<p>定理：先手必胜，当且仅当异或和 <span><span class="MathJax_Preview">\neq 0</span><script type="math/tex">\neq 0</script></span></p>
-</blockquote>
-<p>证明可用数学归纳法，从游戏结束开始分析，</p>
-<p>每次给对面一个平衡状态（异或和 = 0）</p>
-<h2 id="icg">公平组合游戏 ICG<a class="headerlink" href="#icg" title="Permanent link">&para;</a></h2>
-<p>两个玩家交替行动
-能执行的操作与具体玩家无关
-不能行动的玩家判负</p>
-<h2 id="mex-sg">mex 运算与 SG 函数<a class="headerlink" href="#mex-sg" title="Permanent link">&para;</a></h2>
-<p>定义 mex 为，非负整数集合 S 中，最小的不属于集合 S 的非负整数。</p>
-<p>对于状态 x，有 k 个后继状态 y</p>
+                <p><strong> 博弈论 </strong>，是经济学的一个分支，主要研究具有竞争或对抗性质的对象，在一定规则下产生的各种行为。博弈论考虑游戏中的个体的预测行为和实际行为，并研究它们的优化策略。</p>
+<p>通俗地讲，博弈论主要研究的是：在一个游戏中，进行游戏的多位玩家的策略。</p>
+<h2 id="_1">公平组合游戏<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<p>公平组合游戏的定义如下：</p>
+<ul>
+<li>
+<p>游戏有两个人参与，二者轮流做出决策。且这两个人的决策都对自己最有利。</p>
+</li>
+<li>
+<p>游戏中的同一个状态不可能多次抵达。且游戏不会有平局出现。</p>
+</li>
+<li>
+<p>任意一个游戏者在某一确定状态可以作出的决策集合只与当前的状态有关，而与游戏者无关。</p>
+</li>
+</ul>
+<p>大部分的棋类游戏都是公平组合游戏，如国际象棋、中国象棋、围棋、五子棋等。</p>
+<h2 id="nim">Nim 游戏<a class="headerlink" href="#nim" title="Permanent link">&para;</a></h2>
+<p><span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> 堆物品，每堆有 <span><span class="MathJax_Preview">a_i</span><script type="math/tex">a_i</script></span> 个，两个玩家轮流取走任意一堆的任意个物品，但不能不取。</p>
+<p>取走最后一个物品的人获胜。</p>
+<p>例如，如果现在有 <span><span class="MathJax_Preview">n=3</span><script type="math/tex">n=3</script></span> 堆物品，而每堆分别有 <span><span class="MathJax_Preview">2, 5, 4</span><script type="math/tex">2, 5, 4</script></span> 个，那么可以取走第 <span><span class="MathJax_Preview">1</span><script type="math/tex">1</script></span> 堆中的 <span><span class="MathJax_Preview">2</span><script type="math/tex">2</script></span> 个物品，局面就变成了 <span><span class="MathJax_Preview">0, 5, 4</span><script type="math/tex">0, 5, 4</script></span> ；或者也可以取走第 <span><span class="MathJax_Preview">2</span><script type="math/tex">2</script></span> 堆的 <span><span class="MathJax_Preview">4</span><script type="math/tex">4</script></span> 个物品，局面就变成了 <span><span class="MathJax_Preview">2, 1, 4</span><script type="math/tex">2, 1, 4</script></span> 。</p>
+<p>如果现在的局面为 <span><span class="MathJax_Preview">0, 0, 5</span><script type="math/tex">0, 0, 5</script></span> ，甲取走了第 <span><span class="MathJax_Preview">3</span><script type="math/tex">3</script></span> 堆的 <span><span class="MathJax_Preview">5</span><script type="math/tex">5</script></span> 个物品，也就是取走了最后一个物品，此时甲获胜。</p>
+<h2 id="_2">博弈图和状态<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>如果将每个状态视为一个节点，再从每个状态向它的后继状态连边，我们就可以得到一个博弈状态图。</p>
+<p>例如，如果节点 <span><span class="MathJax_Preview">(i, j, k)</span><script type="math/tex">(i, j, k)</script></span> 表示局面为 <span><span class="MathJax_Preview">i, j, k</span><script type="math/tex">i, j, k</script></span> 时的状态，则我们可以画出下面的博弈图（由于篇幅有限，故仅显示部分状态节点和部分边）：</p>
+<p><img alt="博弈图的例子" src="../images/game1.png" /></p>
+<p>定义 <strong> 必胜状态 </strong> 为 <strong> 先手必胜的状态 </strong>，<strong> 必败状态 </strong> 为 <strong> 先手必败的状态 </strong>。</p>
+<p>通过推理，我们可以得出下面三条定理：
+<em> 定理 1：没有后继状态的状态是必败状态。
+</em> 定理 2：一个状态是必胜状态当且仅当存在至少一个必败状态为它的后继状态。
+* 定理 3：一个状态是必败状态当且仅当它的所有后继状态均为必胜状态。</p>
+<p>对于定理 1，如果游戏进行不下去了，那么这个玩家就输掉了游戏。</p>
+<p>对于定理 2，如果该状态至少有一个后继状态为必败状态，那么玩家可以通过操作到该必败状态；此时对手的状态为必败状态——对手必定是失败的，而相反地，自己就获得了胜利。</p>
+<p>对于定理 3，如果不存在一个后继状态为必败状态，那么无论如何，玩家只能操作到必胜状态；此时对手的状态为必胜状态——对手必定是胜利的，自己就输掉了游戏。</p>
+<p>如果博弈图是一个有向无环图，则通过这三个定理，我们可以在绘出博弈图的情况下用 <span><span class="MathJax_Preview">O(N+M)</span><script type="math/tex">O(N+M)</script></span> 的时间（其中 <span><span class="MathJax_Preview">N</span><script type="math/tex">N</script></span> 为状态种数， <span><span class="MathJax_Preview">M</span><script type="math/tex">M</script></span> 为边数）得出每个状态是必胜状态还是必败状态。</p>
+<h2 id="nim_1">Nim 和<a class="headerlink" href="#nim_1" title="Permanent link">&para;</a></h2>
+<p>让我们再次回顾 Nim 游戏。</p>
+<p>通过绘画博弈图，我们可以在 <span><span class="MathJax_Preview">O(a_1 \cdot a_2 \cdot \ldots \cdot a_n)</span><script type="math/tex">O(a_1 \cdot a_2 \cdot \ldots \cdot a_n)</script></span> 的时间里求出该局面是否先手必赢。</p>
+<p>但是，这样的时间复杂度实在太高。有没有什么巧妙而快速的方法呢？</p>
+<p>定义 Nim 和 <span><span class="MathJax_Preview">=a_1 \oplus a_2 \oplus \ldots \oplus a_n</span><script type="math/tex">=a_1 \oplus a_2 \oplus \ldots \oplus a_n</script></span>。</p>
+<p>当且仅当 Nim 和为 <span><span class="MathJax_Preview">0</span><script type="math/tex">0</script></span> 时，该状态为必败状态；否则该状态为必胜状态。</p>
+<h3 id="_3">证明<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h3>
+<p>为什么异或值会和状态的胜负有关？下面给出了这个定理的证明过程。</p>
+<p>为了证明该定理，只需要证明下面三个定理：
+<em> 定理 1：没有后继状态的状态是必败状态。
+</em> 定理 2：对于 <span><span class="MathJax_Preview">a_1 \oplus a_2 \oplus \ldots \oplus a_n \neq 0</span><script type="math/tex">a_1 \oplus a_2 \oplus \ldots \oplus a_n \neq 0</script></span> 的局面，一定存在某种移动使得 <span><span class="MathJax_Preview">a_1 \oplus a_2 \oplus \ldots \oplus a_n = 0</span><script type="math/tex">a_1 \oplus a_2 \oplus \ldots \oplus a_n = 0</script></span> 。
+* 定理 3：对于 <span><span class="MathJax_Preview">a_1 \oplus a_2 \oplus \ldots \oplus a_n = 0</span><script type="math/tex">a_1 \oplus a_2 \oplus \ldots \oplus a_n = 0</script></span> 的局面，一定不存在某种移动使得 <span><span class="MathJax_Preview">a_1 \oplus a_2 \oplus \ldots \oplus a_n = 0</span><script type="math/tex">a_1 \oplus a_2 \oplus \ldots \oplus a_n = 0</script></span> 。</p>
+<p>对于定理 1，没有后继状态的状态只有一个，即全 <span><span class="MathJax_Preview">0</span><script type="math/tex">0</script></span> 局面。此时 <span><span class="MathJax_Preview">a_1 \oplus a_2 \oplus \ldots \oplus a_n = 0</span><script type="math/tex">a_1 \oplus a_2 \oplus \ldots \oplus a_n = 0</script></span> 。</p>
+<p>对于定理 2，不放假设 <span><span class="MathJax_Preview">a_1 \oplus a_2 \oplus \ldots a_n = k \neq 0</span><script type="math/tex">a_1 \oplus a_2 \oplus \ldots a_n = k \neq 0</script></span> 。如果我们要将 <span><span class="MathJax_Preview">a_i</span><script type="math/tex">a_i</script></span> 改为 <span><span class="MathJax_Preview">a_i'</span><script type="math/tex">a_i'</script></span> ，则 <span><span class="MathJax_Preview">a_i'=a_i \oplus k</span><script type="math/tex">a_i'=a_i \oplus k</script></span> 。</p>
+<p>根据异或定义，一定有奇数个 <span><span class="MathJax_Preview">a_i</span><script type="math/tex">a_i</script></span> 在 <span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span> 在二进制下的最高位为 <span><span class="MathJax_Preview">1</span><script type="math/tex">1</script></span> 。满足这个条件的 <span><span class="MathJax_Preview">a_i</span><script type="math/tex">a_i</script></span> 一定也满足 <span><span class="MathJax_Preview">a_i &gt; a_i \oplus k</span><script type="math/tex">a_i > a_i \oplus k</script></span> ，因而这也是个合法的移动。</p>
+<p>对于定理 3，如果我们要将 <span><span class="MathJax_Preview">a_i</span><script type="math/tex">a_i</script></span> 改为 <span><span class="MathJax_Preview">a_i'</span><script type="math/tex">a_i'</script></span> ，则根据异或运算律可以得出 <span><span class="MathJax_Preview">a_i=a_i'</span><script type="math/tex">a_i=a_i'</script></span> ，因而这不是个合法的移动。</p>
+<h2 id="sg">有向图游戏与 SG 函数<a class="headerlink" href="#sg" title="Permanent link">&para;</a></h2>
+<p>有向图游戏是一个经典的博弈游戏——实际上，大部分的公平组合游戏都可以转换为有向图游戏。</p>
+<p>在一个有向无环图中，只有一个起点，上面有一个棋子，两个玩家轮流沿着有向边推动棋子，不能走的玩家判负。</p>
+<p>定义 <span><span class="MathJax_Preview">mex</span><script type="math/tex">mex</script></span> 函数的值为不属于集合 <span><span class="MathJax_Preview">S</span><script type="math/tex">S</script></span> 中的最小非负整数，即：</p>
 <div>
-<div class="MathJax_Preview">SG(x)=mex( { SG(y_1),SG(y_2)…SG(y_k) } )</div>
-<script type="math/tex; mode=display">SG(x)=mex( { SG(y_1),SG(y_2)…SG(y_k) } )</script>
+<div class="MathJax_Preview">mex(S)=min\{x\} \quad (x \notin S, x \in N)</div>
+<script type="math/tex; mode=display">mex(S)=min\{x\} \quad (x \notin S, x \in N)</script>
 </div>
-<p>而对于多个有向图游戏，定义有向图游戏的和为，它们 sg(起点) 的异或和</p>
-<blockquote>
-<p>定理：有向图游戏的某个局面必胜，当且仅当其对应节点，sg 函数值大于 0（能到达必败终点）</p>
-</blockquote>
-<h2 id="_2">参考<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<p><a href="http://zory.cf/posts/c7bb.html">http://zory.cf/posts/c7bb.html</a></p>
+<p>例如 <span><span class="MathJax_Preview">mex(\{0, 2, 4\})=1</span><script type="math/tex">mex(\{0, 2, 4\})=1</script></span> ， <span><span class="MathJax_Preview">mex(\{1, 2\})=0</span><script type="math/tex">mex(\{1, 2\})=0</script></span> 。</p>
+<p>对于状态 <span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span> 和它的所有 <span><span class="MathJax_Preview">k</span><script type="math/tex">k</script></span> 个后继状态 <span><span class="MathJax_Preview">y_1, y_2, \ldots, y_k</span><script type="math/tex">y_1, y_2, \ldots, y_k</script></span> ，定义 <span><span class="MathJax_Preview">SG</span><script type="math/tex">SG</script></span> 函数：</p>
+<div>
+<div class="MathJax_Preview">SG(x)=mex\{SG(y_1), SG(y_2), \ldots, G(y_k)\}</div>
+<script type="math/tex; mode=display">SG(x)=mex\{SG(y_1), SG(y_2), \ldots, G(y_k)\}</script>
+</div>
+<p>而对于由 <span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> 个有向图游戏组成的组合游戏，设它们的起点分别为 <span><span class="MathJax_Preview">s_1, s_2, \ldots, s_n</span><script type="math/tex">s_1, s_2, \ldots, s_n</script></span> ，则有定理：<strong> 当且仅当 <span><span class="MathJax_Preview">SG(s_1) \oplus SG(s_2) \oplus \ldots \oplus SG(s_n) \neq 0</span><script type="math/tex">SG(s_1) \oplus SG(s_2) \oplus \ldots \oplus SG(s_n) \neq 0</script></span> 时，这个游戏是先手必胜的。</strong></p>
+<p>这一定理被称作 SG 定理。</p>
+<h2 id="nim_2">将 Nim 游戏转换为有向图游戏<a class="headerlink" href="#nim_2" title="Permanent link">&para;</a></h2>
+<p>我们可以将一个有 <span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span> 个物品的堆视为节点 <span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span> ，则当且仅当 <span><span class="MathJax_Preview">y&lt;x</span><script type="math/tex">y<x</script></span> 时，节点 <span><span class="MathJax_Preview">x</span><script type="math/tex">x</script></span> 可以到达 <span><span class="MathJax_Preview">y</span><script type="math/tex">y</script></span> 。</p>
+<p>那么，由 <span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> 个堆组成的 Nim 游戏，就可以视为 <span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> 个有向图游戏了。</p>
+<p>根据上面的推论，可以得出 <span><span class="MathJax_Preview">SG(x)=x</span><script type="math/tex">SG(x)=x</script></span> 。再根据 SG 定理，就可以得出 Nim 和的结论了。</p>
+<h2 id="_4">参考文献<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<p><a href="http://www.cnblogs.com/exponent/articles/2141477.html">(转载)Nim 游戏博弈 (收集完全版) - exponent - 博客园</a></p>
+<p><a href="https://www.cnblogs.com/candy99/p/6548836.html">[组合游戏与博弈论]【学习笔记】 - Candy? - 博客园</a></p>
                 
                   
                 
