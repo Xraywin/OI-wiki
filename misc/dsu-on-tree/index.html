@@ -3129,7 +3129,7 @@
 <p>树上启发式合并（dsu on tree）对于某些树上离线问题可以速度大于等于大部分算法且更易于理解和实现的算法。</p>
 <p>考虑下面的问题：</p>
 <p>给出一棵树，每个节点有颜色，询问一些子树的颜色数量（颜色可重复）。</p>
-<p><img alt="" src="https://cdn.luogu.org/upload/pic/24620.png" /></p>
+<p><img alt="24620.png" src="../images/24620.png" />   </p>
 <p>对于这种问题解决方式大多是运用大量的数据结构（树套树等），如果可以离线，询问的量巨大，是不是有更简单的方法？</p>
 <p>树上莫队!</p>
 <p>不行，莫队带根号，我要 log</p>
@@ -3150,7 +3150,7 @@
 <p>再次遍历其非重儿子及其父亲，用重儿子的 check 对遍历到的节点进行计算，获取整棵子树的 ans；</p>
 </li>
 </ul>
-<p><img alt="" src="https://cdn.luogu.org/upload/pic/24919.png" /></p>
+<p><img alt="24919.png" src="../images/24919.png" />    </p>
 <p><em>上图是一个例子</em></p>
 <p>这样，对于一个节点，我们遍历了一次重子树，两次非重子树，显然是最划算的。</p>
 <p>经过这个过程，我们获得了这个节点的子树的所有 ans</p>
@@ -3162,7 +3162,7 @@
 <p>我们像树链剖分一样定义重边和轻边（连向重儿子的为重边，其余为轻边）关于重儿子和重边的定义，可以见下图，对于一棵有 <span><span class="MathJax_Preview">n</span><script type="math/tex">n</script></span> 个节点的树：</p>
 <p>根节点到树上任意节点的轻边数不超过 <span><span class="MathJax_Preview">\log n</span><script type="math/tex">\log n</script></span> 条。我们设根到该节点有x条轻边该节点的子树大小为 <span><span class="MathJax_Preview">y</span><script type="math/tex">y</script></span>，显然轻边连接的子节点的子树大小小于父亲的一半（若大于一半就不是轻边了），则 <span><span class="MathJax_Preview">y&lt;n/2^x</span><script type="math/tex">y<n/2^x</script></span>，显然 <span><span class="MathJax_Preview">n&gt;2^x</span><script type="math/tex">n>2^x</script></span>，所以 <span><span class="MathJax_Preview">x&lt;\log n</span><script type="math/tex">x<\log n</script></span>。</p>
 <p>又因为如果一个节点是其父亲的重儿子，则他的子树必定在他的兄弟之中最多，所以任意节点到根的路径上所有重边连接的父节点在计算答案是必定不会遍历到这个节点，所以一个节点的被遍历的次数等于他到根节点路径上的轻边树 <span><span class="MathJax_Preview">+1</span><script type="math/tex">+1</script></span>（之所以要 <span><span class="MathJax_Preview">+1</span><script type="math/tex">+1</script></span> 是因为他本身要被遍历到），所以一个节点的被遍历次数 <span><span class="MathJax_Preview">=\log n+1</span><script type="math/tex">=\log n+1</script></span>,总时间复杂度则为 <span><span class="MathJax_Preview">O(n(\log n+1))=O(n\log n)</span><script type="math/tex">O(n(\log n+1))=O(n\log n)</script></span>，输出答案花费 <span><span class="MathJax_Preview">O(m)</span><script type="math/tex">O(m)</script></span>.</p>
-<p><img alt="" src="https://cdn.luogu.org/upload/pic/24909.png" /></p>
+<p><img alt="24909.png" src="../images/24909.png" /> </p>
 <p><em>图中标红的即为重边，重边连向的子节点为重儿子</em> </p>
 <h3 id="_4">大致代码<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h3>
 <p>这里是预处理代码
